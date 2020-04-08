@@ -4,9 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "posttest": "npm run format",
+    "format": "prettier --loglevel warn --write \"**/*.{js,css,md}\""
   },
   "keywords": [],
   "author": "Robin Millette <robin@millette.info> (http://robin.millette.info/)",
-  "license": "AGPL-3.0"
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.2",
+    "prettier": "^2.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
 }
