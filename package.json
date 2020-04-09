@@ -12,6 +12,8 @@
   "author": "Robin Millette <robin@millette.info> (http://robin.millette.info/)",
   "license": "AGPL-3.0",
   "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "bs-html-injector": "^3.0.3",
     "husky": "^4.2.4",
     "lint-staged": "^10.1.3",
     "prettier": "^2.0.4"
