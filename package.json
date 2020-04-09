@@ -1,14 +1,13 @@
 {
   "name": "bv",
   "version": "0.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "browser-sync start --config bs-config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "posttest": "npm run format",
-    "format": "prettier --loglevel warn --write \"**/*.{html,js,css,md}\""
+    "format": "prettier --loglevel warn --write \"**/*.{html,js,json,css,md}\""
   },
-  "keywords": [],
   "author": "Robin Millette <robin@millette.info> (http://robin.millette.info/)",
   "license": "AGPL-3.0",
   "devDependencies": {
@@ -24,6 +23,6 @@
     }
   },
   "lint-staged": {
-    "*.{html,js,css,md}": "prettier --write"
+    "*.{html,js,json,css,md}": "prettier --write"
   }
 }
