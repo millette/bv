@@ -4,21 +4,21 @@ import {
   svg,
   html,
   useState,
-} from "https://unpkg.com/neverland@3.4.0/esm/index.js?module";
+} from "https://unpkg.com/neverland@3.4.0/esm/index.js?module"
 
-const $app = document.createElement("div");
+const $app = document.createElement("div")
 
-document.body.appendChild($app);
+document.body.appendChild($app)
 
-const arr2 = [...Array(10)];
-const arr = [...Array(10)];
+const arr2 = [...Array(10)]
+const arr = [...Array(15)]
 
-const w0 = 2000;
-const h0 = 1000;
+const w0 = 2000
+const h0 = 1000
 
-const p = 20;
-const w1 = (w0 - p) / arr.length - p;
-const h1 = (h0 - p) / arr2.length - p;
+const p = 20
+const w1 = (w0 - p) / arr.length - p
+const h1 = (h0 - p) / arr2.length - p
 
 const s = svg`<svg viewbox="0 0 2000 1000">
 ${arr2.map((g, n2) =>
@@ -31,6 +31,6 @@ ${arr2.map((g, n2) =>
     }</text>`
   )
 )}
-</svg>`;
+</svg>`
 
-render($app, s);
+render($app, s)
