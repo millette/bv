@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --config bs-config.js",
+    "start": "browser-sync start --server --no-open --files main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "posttest": "npm run format",
     "format": "prettier --loglevel warn --write \"**/*.{html,js,json,css,md}\""
@@ -12,7 +12,6 @@
   "license": "AGPL-3.0",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "bs-html-injector": "^3.0.3",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.3",
     "prettier": "^2.0.4"
